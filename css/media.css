@@ -1,0 +1,155 @@
+@media screen and (max-width:303px) {
+    .typing {
+        font-size: 1.5rem !important;
+    }
+
+    .typing::after {
+
+        font-size: 1.5rem !important;
+
+    }
+
+    #about .btns .btn-1 {
+        margin-bottom: 10px;
+    }
+
+    #Services .header h2::after {
+
+        width: 50%;
+
+    }
+
+    #Testimonials .header h2::after {
+
+        width: 50%;
+
+    }
+
+    #Portfolio .header h2::after {
+
+        width: 50%;
+
+    }
+
+    #Team .header h2::after {
+
+        width: 50%;
+
+    }
+
+    #Contact .header h2::after {
+
+        width: 60%;
+
+    }
+}
+
+@media screen and (min-width:303px) and (max-width:551px) {
+    .typing {
+        font-size: 2.1rem !important;
+    }
+
+    .typing::after {
+
+        font-size: 2.2rem !important;
+        padding-bottom: 15px !important;
+    }
+
+    .dots .inner::after {
+        left: -9% !important;
+
+    }
+
+    #Services .header h2::after {
+
+        width: 34%;
+
+    }
+
+    #Testimonials .header h2::after {
+
+        width: 50%;
+
+    }
+
+    #Portfolio .header h2::after {
+
+        width: 35%;
+
+    }
+
+    #Team .header h2::after {
+
+        width: 35%;
+
+    }
+
+    #Contact .header h2::after {
+
+        width: 35%;
+
+    }
+}
+
+
+@media screen and (min-width:551px) and (max-width:992px) {
+    #Services .header h2::after {
+
+        width: 21%;
+
+    }
+
+    #Testimonials .header h2::after {
+
+        width: 28%;
+
+    }
+
+    #Portfolio .header h2::after {
+
+        width: 22%;
+
+    }
+
+    #Team .header h2::after {
+
+        width: 22%;
+
+    }
+
+    #Contact .header h2::after {
+
+        width: 24%;
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .dots .inner::after {
+        left: 10% !important;
+
+    }
+}
+
+@media screen and (min-width:992px) {
+    .dots .inner::after {
+        left: -9% !important;
+
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .dots .inner::after {
+        left: -1% !important;
+
+    }
+}
+
+
+@media screen and (min-width:0px) and (max-width:992px) {
+
+    nav ul li a.active::after {
+        margin: 1px;
+        width: 10%;
+    }
+}

@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900 !important;
+}
+
+a {
+    color: #fff !important;
+}
+
+nav ul li a {
+    position: relative;
+    color: #000 !important;
+    border-bottom: 1px solid #fff;
+    transition: all .5s;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 8px;
+    background: #000;
+}
+
+nav {
+    font-family: Montserrat;
+}
+
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../imgs/bg.jpg );
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    font-family: Montserrat;
+}
+
+header .header-info h2 {
+    font-size: 50px;
+    ;
+    font-weight: 900;
+}
+
+header .header-info ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.dots {
+    padding: 0 0 0 50px;
+
+}
+
+.dots .inner {
+    position: relative;
+    z-index: 3;
+
+}
+
+.dots .inner img {
+    position: relative;
+    width: 430px !important;
+    z-index: 999;
+
+}
+
+.dots .inner::after {
+    content: "";
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    left: -9px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+
+    z-index: 1;
+
+}
+
+.col-md-7 .inner p {
+    max-width: 652px;
+    font-size: 15px;
+}
+
+
+#about .inner span {
+    letter-spacing: 4px;
+}
+#about .btns .btn-1 {
+    background: #000;
+    color: #fff;
+    transition: all .5s;
+    padding: 10px 30px;
+    font-size: 14px;
+}
+
+#about .btns .btn-2 {
+
+    color: #000;
+    transition: all .5s;
+    padding: 10px 30px;
+    font-size: 14px;
+    border: 1px solid #000;
+}
+
+#about .btns .btn-1:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+
+}
+
+#about .btns .btn-2:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+
+}
+
+
+
+#Services .header h2 {
+    position: relative;
+    font-weight: 900 !important;
+    font-size: 40px !important;
+}
+
+#Services .header h2::after {
+    position: absolute;
+    content: '';
+    background-image: url(../imgs/dots.png);
+
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 12%;
+    margin: auto;
+    z-index: 10;
+
+}
+
+.ser-icon .inner .icon i {
+    transition: all .5s;
+}
+
+.ser-icon .inner .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70;
+    border-radius: 50%;
+    background: #f4f4f4;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+
+.ser-icon .inner p {
+
+    margin: 0 auto;
+    word-spacing: 2px;
+    font-size: 14px;
+}
+
+.ser-icon .inner:hover .icon {
+    background: #000;
+
+}
+
+
+.ser-icon .inner:hover i {
+    color: #fff !important;
+}
+
+
+
+#Portfolio .header h2 {
+    position: relative;
+    font-weight: 900 !important;
+    font-size: 40px !important;
+}
+
+#Portfolio .header h2::after {
+    position: absolute;
+    content: '';
+    background-image: url(../imgs/dots.png);
+
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 12%;
+    margin: auto;
+    z-index: 10;
+
+}
+
+.overlay-info .text-black{
+    letter-spacing: 5px;
+}
+.inner .overlay {
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transform: translateY(7%);
+    transition: all .7s;
+}
+
+.overlay-icon span i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+}
+
+.pro-hover .inner:hover .overlay {
+    opacity: .9;
+    transform: translateY(0%);
+}
+
+
+i {
+    color: #fff;
+}
+
+.overlay-info .overlay-icon span:hover i {
+    background: transparent;
+    border: 1px #000 solid;
+    color: #000 !important;
+}
+
+
+.nav-pills .nav-link {
+    background: transparent !important;
+    color: #000 !important;
+    font-weight: 900;
+}
+
+.nav-pills .nav-link.active {
+    position: relative;
+
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.nav-pills .nav-link.active::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 3px;
+    background: #000;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+
+}
+
+#Testimonials .header h2 {
+    position: relative;
+    font-weight: 900 !important;
+    font-size: 40px !important;
+}
+
+#Testimonials .header h2::after {
+    position: absolute;
+    content: '';
+    background-image: url(../imgs/dots.png);
+
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 17%;
+    margin: auto;
+    z-index: 10;
+
+}
+
+.carousel-inner img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.item p {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.item span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #869791 !important;
+    border: 0;
+}
+
+#Clients .inner h5 {
+    font-size: 14px;
+}
+
+#Clients i {
+    color: #000;
+}
+
+
+#Team .container {
+
+    font-family: Montserrat;
+}
+
+#Team .header h2 {
+
+    position: relative;
+    font-weight: 900 !important;
+    font-size: 40px !important;
+}
+
+#Team .header h2::after {
+    position: absolute;
+    content: '';
+    background-image: url(../imgs/dots.png);
+
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 14%;
+    margin: auto;
+    z-index: 10;
+
+}
+
+#Team .container img {
+    transition: all .7s;
+    position: relative;
+
+}
+
+#Team .container .col-md-4 .inner2 img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.inner2-img:hover .overlay {
+    opacity: 1;
+    transform: rotateY(360deg) scale(1);
+
+}
+
+.inner2-img:hover img {
+    scale: 1.2;
+}
+
+.inner2 .overlay {
+
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: 90%;
+    height: 73%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: 0.7s;
+    z-index: 2;
+}
+
+.inner2:hover .overlay {
+    opacity: 1;
+    transform: rotateY(360deg) scale(1);
+
+
+
+}
+
+.inner2 .overlay ul li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #000 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.inner2 .overlay ul li:hover {
+    background: transparent !important;
+
+}
+
+.inner2 .overlay ul li:hover i {
+    color: #000 !important;
+
+}
+
+.inner2 .inner-info {
+    background-color: rgba(52, 52, 52, .8) !important;
+}
+
+
+
+#Contact .header h2 {
+    position: relative;
+    font-weight: 900 !important;
+    font-size: 40px !important;
+}
+
+#Contact .header h2::after {
+    position: absolute;
+    content: '';
+    background-image: url(../imgs/dots.png);
+
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 14%;
+    margin: auto;
+    z-index: 10;
+
+}
+
+#Contact .inner i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: all .4s;
+    background: #f8f9fa;
+    color: #000 !important;
+}
+
+#Contact .inner:hover i {
+    background: #000 !important;
+
+    color: #f8f9fa !important;
+}
+
+#Contact .inner h5 {
+    font-size: 17px !important;
+    font-weight: normal !important;
+}
+
+.foot-btn {
+    padding: 10px 40px;
+    background: #000;
+    color: #fff;
+    transition: all .5s;
+}
+
+.foot-btn:hover {
+
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.form-control {
+    box-shadow: none !important;
+    border: 0 !important;
+}
